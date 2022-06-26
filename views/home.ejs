@@ -7,8 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="box">
-        <h2>Home page</h2>
-    </div>
+    <h2> <%= title %>  </h2>
+
+    <% if (error.status) { %>
+        <p><%= error.msg %> </p>
+    <% } %>
 </body>
 </html>
