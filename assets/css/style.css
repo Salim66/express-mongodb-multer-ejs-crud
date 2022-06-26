@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-.box {
-    width: 400px;
-    height: 200px;
-    padding: 20px;
-    background-color: red;
-}
-
-body {
-    background-color: green;
+tr {
+    vertical-align: middle;
 }
