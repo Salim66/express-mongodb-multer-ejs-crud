@@ -5,6 +5,7 @@ const app = express();
 const colors = require('colors');
 const path = require('path');
 const { application } = require('express');
+const expressLayout = require('express-ejs-layouts');
 
 
 // Environment port get
@@ -12,6 +13,8 @@ const PORT = process.env.SERVER_P0RT || 5000;
 
 // Ejs Setup
 app.set("view engine", 'ejs');
+app.set('layout', './layouts/app')
+app.use(expressLayout);
 
 // Express js static folder 
 app.use('/assets', express.static(path.join(__dirname, '/assets')));
