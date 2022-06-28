@@ -19,7 +19,14 @@ const createStudents = (req, res) => {
     res.render('create');
 }
 
+
+const showSingleStudent = (req, res) => {
+    res.render('show');
+}
+
+
 module.exports = {
     getAllStudents,
-    createStudents
+    createStudents,
+    showSingleStudent
 }

@@ -6,7 +6,10 @@ const colors = require('colors');
 const path = require('path');
 const { application } = require('express');
 const expressLayout = require('express-ejs-layouts');
+const createMongoDB = require('./config/db');
 
+// mongodb connected on server
+createMongoDB();
 
 // Environment port get
 const PORT = process.env.SERVER_P0RT || 5000;
