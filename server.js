@@ -8,6 +8,11 @@ const { application } = require('express');
 const expressLayout = require('express-ejs-layouts');
 const createMongoDB = require('./config/db');
 
+
+//allow to access user database json data // body data
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 // mongodb connected on server
 createMongoDB();
 
